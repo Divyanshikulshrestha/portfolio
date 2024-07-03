@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e12898f936.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="name.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">My works</a></li>
+            <li><a href="#contact">Contact </a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front end developer</p>
+          <h1>
+            Hi, I'm<span> Divyanshi</span><br />
+            kulshrestha from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------about section---------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="divyanshi.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am a second-year B.Tech Computer Science and Data Science
+              student with a passion for front-end development. Skilled in HTML,
+              CSS, and JavaScript, I enjoy creating visually appealing and
+              user-friendly websites. I am eager to apply my knowledge and grow
+              in the field of web development.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML CSS & JavaScript</span><br />Web development</li>
+                <li><span>Python</span><br />Basic core python</li>
+                <li><span>C/C++</span><br />Programming & oops concept</li>
+              </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/app interface</li>
+                <li><span>front end</span><br />Designing web/app interface</li>
+                <li><span>front end</span><br />Designing web/app interface</li>
+              </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>10th CBSE Board</span><br />75.5%</li>
+                <li><span>12th CBSE Board</span><br />80.5%</li>
+                <li><span>B.tech</span><br />6.86 sgpa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------services section--------- -->
+
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+              officia? Dolor iste possimus sint eos rem! Ex perferendis ipsam
+              voluptatum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+              officia? Dolor iste possimus sint eos rem! Ex perferendis ipsam
+              voluptatum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+              officia? Dolor iste possimus sint eos rem! Ex perferendis ipsam
+              voluptatum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ---------portfolio--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="expense tracker project.jpg" />
+            <div class="layer">
+              <h3>Personal expense tracker</h3>
+              <p>
+                I created a personal expense tracker using HTML, CSS, and
+                JavaScript. This tool allows you to add and categorize your
+                monthly expenses, as well as set a monthly budget. It's
+                user-friendly, helping you manage your finances effectively and
+                stay within your spending limits.
+              </p>
+              <a href="https://divyanshikulshrestha.github.io/expense-traker/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="weather project.jpg" />
+            <div class="layer">
+              <h3>Weather website</h3>
+              <p>
+                I developed a weather application using HTML, CSS, and
+                JavaScript. It provides real-time data on city temperatures,
+                humidity, and wind speed. The user-friendly interface ensures
+                easy navigation, making it simple for users to stay informed
+                about current weather conditions.
+              </p>
+              <a href="https://divyanshikulshrestha.github.io/weather-app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="college club project.jpg" />
+            <div class="layer">
+              <h3>College club website</h3>
+              <p>
+                I created a college club website using Bootstrap 5, showcasing
+                various clubs, event photos, and upcoming events. This dynamic
+                platform enhances student engagement and community building. I
+                continue to develop and refine the site, adding new features to
+                improve the user experience and keep content up-to-date.
+              </p>
+              <a
+                href="https://divyanshikulshrestha.github.io/student-club/home.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- --------contact section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >divyanshikulshrestha9@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+918433482493</p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/kulshrestha_divyanshi?igsh=bTRyejNvNnpncTk1"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/divyanshi-kulshrestha-a46393250"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Divyanshikulshrestha"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="first resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright Made with <i class="fa-solid fa-heart"></i> by Divyanshi
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzpaA3j74obUd2fh8c98MnIZAV3H8hetW5EhUEpw8Ie8nzbb941YO333h-Zusd1TQxf/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
